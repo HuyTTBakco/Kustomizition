@@ -3,6 +3,9 @@ apiVersion: apps/v1
 metadata:
   name: dpu-management-testv1
   namespace: neo4j
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: 'management=management:test'
+    argocd-image-updater.argoproj.io/nginx.update-strategy: latest
   labels:
     app: dpu-management-testv1
 spec:
