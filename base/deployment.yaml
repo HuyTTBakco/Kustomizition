@@ -22,4 +22,4 @@ spec:
       imagePullSecrets:
         - name: regcred
   strategy:
-    type: RollingUpdate
+    type: RollingUpdate 
